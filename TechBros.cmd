@@ -1,1 +1,1 @@
-java -cp ../lib/* TechBros.java >nul
+java -cp ../lib/* TechBros.java 
