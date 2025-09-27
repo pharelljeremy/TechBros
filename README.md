@@ -1,1 +1,3 @@
-this bot is for efficiency and power 
+Hungry for success
+Thirsy for power
+Itching for domination
