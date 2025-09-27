@@ -11,6 +11,13 @@ public class MyFirstBot extends Bot {
     // Called when a new round is started -> initialize and do some movement
     @Override
     public void run() {
+        //bot colour
+        setBodyColor(Color.RED);
+        setTurretColor(Color.BLACK);
+        setRadarColor(new Color(173, 216, 230)); 
+        setBulletColor(Color.RED);
+        setScanColor(Color.BLACK);
+
         // Repeat while the bot is running
         while (isRunning()) {
             forward(100);
