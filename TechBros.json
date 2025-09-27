@@ -2,9 +2,9 @@
   "name": "TechBros",
   "version": "1.0",
   "authors": [ "Thabani Abdool, Jeremy Pharell, Assani Shabani, Lethabo Moumakwe" ],
-  "description": "My first bot",
-  "homepage": "«insert link to a home page for your bot»",
-  "countryCodes": [ "«enter your country code, e.g. us»" ],
+  "description": "The first TechBros bot."
+  "homepage": "«https://github.com/pharelljeremy/TechBros»",
+  "countryCodes": [ "«ZAR»" ],
   "platform": "Java",
   "programmingLang": "Java 22"
 }
