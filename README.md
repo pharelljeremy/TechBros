@@ -1,2 +1,1 @@
-# TechBros
-Hackathon_EPS_BOT
+this bot is for efficiency and power 
