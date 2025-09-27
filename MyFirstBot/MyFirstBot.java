@@ -5,14 +5,14 @@ import java.awt.Color;
 
 public class MyFirstBot extends Bot {
 
-    // Main method to start the bot
+    // starting the bot
     public static void main(String[] args) {
         new MyFirstBot().start();
     }
 
     @Override
     public void run() {
-        // Set bot colors: body red, turret black, radar light blue, bullets red
+        // the bot colors
         setBodyColor(Color.RED);
         setTurretColor(Color.BLACK);
         setRadarColor(new Color(173, 216, 230)); // light blue
@@ -24,19 +24,19 @@ public class MyFirstBot extends Bot {
             // Move forward
             forward(100);
 
-            // Rotate gun slowly to scan precisely
-            // Changing from 360 degrees fast spin to a slower continuous scan
+            // gun rotation and scan precision
+            // the spin
             turnGunRight(20);
 
-            // Move back to avoid being predictable
+            // back movement
             back(100);
 
-            // Continue scanning but slower rotation for better tracking precision
+            // better rotation
             turnGunRight(20);
         }
     }
 
-    // Fire with power 2 for better damage while conserving energy compared to fire(1)
+    // Fire with power 2 - better damage
     @Override
     public void onScannedBot(ScannedBotEvent e) {
         fire(2);
