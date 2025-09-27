@@ -24,7 +24,7 @@ public class TechBros extends Bot {
             // Tell the game that when we take move, we'll also want to turn right... a lot
             setTurnRight(10_000);
             // Limit our speed to 5
-            setMaxSpeed(7);
+            setMaxSpeed(5);
             // Start moving (and turning)
             forward(10_000);
         }
@@ -43,14 +43,14 @@ public class TechBros extends Bot {
         var direction = directionTo(e.getX(), e.getY());
         var bearing = calcBearing(direction);
         if (bearing > -10 && bearing < 10) {
-            fire(3);
+            fire(4);
         }
         if (e.isRammed()) {
             turnRight(10);
         }
     }
 
-    // We were hit by a bullet -> turn perpendicular to the bullet
+    /* We were hit by a bullet -> turn perpendicular to the bullet
     @Override
     public void onHitByBullet(HitByBulletEvent e) {
         // Calculate the bearing to the direction of the bullet
@@ -61,4 +61,5 @@ public class TechBros extends Bot {
 		// Turn Rate (VELOCITY BOT)
 		setTurnRate(5);
     }
+	*/
 }
