@@ -8,7 +8,7 @@ public class TechBros extends Bot {
         new TechBros().start();
     }
 
-    // Called when a new round is started -> initialize and do some movement
+    // When a new round is started -> initialize and movement
     @Override
     public void run() {
         //bot colour
@@ -27,7 +27,7 @@ public class TechBros extends Bot {
         }
     }
 
-    // We saw another bot -> fire!
+    // Spotted another bot - Shoot it down!
     @Override
     public void onScannedBot(ScannedBotEvent e) {
         fire(1);
